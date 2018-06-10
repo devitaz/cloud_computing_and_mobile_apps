@@ -1,2 +1,2 @@
 # cloud_computing_and_mobile_apps
-This repository contains my homework assignments and final project for the Cloud Computing and Mobile Applications  course I took at Oregon State University.
+This repository contains my homework assignments and final project for the Cloud Computing and Mobile Applications  course I took at Oregon State University. Node.js is used for all assignments and the final project, there is a mix of SQL and DynamoDB databases used for the homework assignments; DynamoDB is used for the final project. The game Space Shooter was developed using Unity and following a tutorial.
