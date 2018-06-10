@@ -1,0 +1,114 @@
+<form action="" class="register" name="reg-form">
+    <h1>Registration</h1>
+    <fieldset class="reg-row">
+        <legend>Account Details</legend>
+        <p>
+            <label>User Name *</label>
+            <input id="User_Name" name="u_name" type="text"/>
+            <label>Email *</label>
+            <input id="Email" name="e_mail" type="text"/>
+        </p>
+        <p>
+            <label>Password*</label>
+            <input id="Password" name="p_word" type="text"/>
+            <label>Repeat Password*</label>
+            <input id="Password" name="p_word2" type="text"/>
+		</p>
+		<p>
+            <label class="obinfo">* required input</label>
+        </p>
+    </fieldset>
+    <fieldset class="reg-row">
+        <legend>Personal Details</legend>
+        <p>
+            <label>First Name *</label>
+            <input id="First_Name" name="f_name" type="text"/>
+			<label>Last Name *</label>
+            <input id="Last_Name" name="l_name" type="text"/>
+        </p>
+        <p style="padding-top: 15px">
+            <label class="optional">Street</label>
+            <input id="Street" name="street" type="text" class="long"/>
+		</p>
+		<p>
+			<label class="optional">City</label>
+            <input id="City" name="city" type="text" maxlength="10"/>
+			<label class="optional">State</label>
+            <select id="stateselect">
+				<option value=""><b>&nbsp;&mdash;</b></option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District Of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</select>
+		</p>
+		<p>
+			<label class="optional">Zip</label>
+            <input id="Zip" name="zip" type="text" maxlength="10"/>
+        </p>
+        <p style="padding: 0 20px 35px 0">
+            <label>Gender *</label>
+			<label class="gender">Male</label>
+            <input type="radio" value="male" name="gender" checked="checked"/>
+            <label class="gender">Female</label>
+            <input type="radio" value="female" name="gender"/>
+        </p>
+		<p class="agreement">
+			<input type="checkbox" name="terms"/>
+			<label>*  I accept the Terms and Conditions</label><br>
+			<div id="div-right">
+				<button class="registeruser" type="submit" value="submit" onclick="return validateRegistration(this)">Register &raquo;</button>
+			</div>
+		</p>	
+    </fieldset>
+</form>
+<!--  eventually goes on another page -->
+<div class="editContainer"></div>
+<div class="tableContainer"></div>
